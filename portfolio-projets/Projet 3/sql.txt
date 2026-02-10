@@ -1,0 +1,29 @@
+CREATE TABLE Contrat (
+CONTRAT_ID int NOT NULL,
+No_voie int,
+B_T_Q varchar,
+Type_de_voie varchar,
+Voie varchar,
+Code_dep_code_commune varchar NOT NULL,
+Code_postal varchar,
+Surface INT,
+Type_local varchar,
+Occupation varchar,
+Type_contrat varchar,
+Formule varchar,
+valeur_declaree_biens varchar,
+prix_cotisation_mensuel INT
+PRIMARY KEY(CONTRAT_ID)
+);
+
+CREATE TABLE region (
+Code_dep_code_commune varchar NOT NULL, 
+reg_code varchar,
+reg_nom varchar,
+aca_nom varchar,
+dep_nom varchar,
+com_nom_maj_courtt varchar,
+dep_code,
+dep_nom_num
+PRIMARY KEY(Code_dep_code_commune)
+);
